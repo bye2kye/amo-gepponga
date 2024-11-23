@@ -1,19 +1,49 @@
 <1DOCTYPE html>
     <html>
         <head>
-            <title>My Cool Website</title>
+            <title>LeBonBon</title>
             <style>
                 img{
                     width: 600px;
                     height: auto;
                 }
+
+                h1{
+                    color: red;
+                }
             </style>
-            
+
         </head>
         <body>
-                <hl>My Cool Website</hl>
-                <p>I think HTML is neat!</p>
+                <h1>LeBonBon</h1>
+                <p>I love my glorious king lebron james</p>
 
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.ritchiebros.com%2Finspection-tips-5-things-to-look-for-when-buying-a-used-dump-truck&psig=AOvVaw2Iop5KdCfEuARMLlskqD-r&ust=1732455719253000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjA9tXK8okDFQAAAAAdAAAAABAE">
+                <img src="https://scontent-yyz1-1.cdninstagram.com/v/t1.15752-9/462583280_542708565227023_3050579391386895536_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=cL_CQHOsp28Q7kNvgFhhquC&_nc_zt=23&_nc_ht=scontent-yyz1-1.cdninstagram.com&oh=03_Q7cD1QFh5_pi4w9F4yEuwDAMiy1YVPFrNE9EW8Ylkf6TO_4SpA&oe=67693A49">
+
+                <blockquote>"Gef isn't doing anything, hes on the weather app."</blockquote>
+                <button onclick="changeQuote()">Change Quote</button>
+
+
+                <script>
+                    var index = 0;
+
+                    function changeQuote() {
+                        var quotes = [
+                            `"i love lebron james" - Kyle Muella`,
+                            `"I HATE that I dont have lebron james in my life" - Abdan Grey`,
+                            `"I love lebron james" - Steven Truong`,
+                            `"I love lebron james" - Gef Kingsley`
+                    ];
+
+                        var blockquote = document.querySelector("blockquote");
+                        blockquote.innerHTML = quotes[index];
+
+                        index++;
+                        if(index >= 4) {
+                            index = 0;
+                        }
+                    }
+                </script>
+
         </body>
     </html>
